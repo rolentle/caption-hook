@@ -4,14 +4,14 @@ class CanCreateUrlTest < ActionDispatch::IntegrationTest
     visit new_hook_path
     fill_in "Url", with: "example.com/hooks"
     within ".parameters" do
-      check('App')
-      check('User')
-      check('Post_url')
-      check('Head')
-      check('Head_long')
-      check('Git_log')
+      check('app')
+      check('user')
+      check('post url')
+      check('head')
+      check('head long')
+      check('git log')
     end
-    click_on "submit"
+    click_on "Submit"
     assert page.has_content? "example.com/hooks"
 
   end

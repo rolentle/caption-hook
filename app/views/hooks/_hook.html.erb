@@ -1,0 +1,27 @@
+<p>URL:<%= hook.url%></p>
+<p>Valid Parameters</p>
+<ul>
+  <% if hook.app %>
+    <li>app</li>
+  <%end%>
+
+  <% if hook.user %>
+    <li>user</li>
+  <%end%>
+
+  <% if hook.post_url %>
+    <li>post_url</li>
+  <%end%>
+
+  <% if hook.head %>
+    <li>head</li>
+  <%end%>
+
+  <% if hook.head_long %>
+    <li>head long</li>
+  <%end%>
+
+  <% if hook.git_log %>
+    <li>git log</li>
+  <%end%>
+</ul>

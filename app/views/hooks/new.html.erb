@@ -2,7 +2,18 @@
   <%= f.label :url %>
   <%= f.text_field :url %>
   <div class="parameters">
-    <%= f.label :app %>
+    <%= f.label :app, "app" %>
     <%= f.check_box :app %>
+    <%= f.label :user, "user" %>
+    <%= f.check_box :user %>
+    <%= f.label :post_url, "post url" %>
+    <%= f.check_box :post_url %>
+    <%= f.label :head, "head" %>
+    <%= f.check_box :head %>
+    <%= f.label :head_long, "head long" %>
+    <%= f.check_box :head_long %>
+    <%= f.label :git_log, "git log" %>
+    <%= f.check_box :git_log %>
    </div>
+   <%= f.submit "Submit" %>
 <% end %>
